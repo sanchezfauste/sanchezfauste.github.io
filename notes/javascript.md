@@ -39,7 +39,7 @@ dins del scope en que es declarada.
 [Diferència entre var i let](https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable-in-jav/11444416#11444416)
 
 
-# Com desempaquetar un objecte
+# Com desestructurar un objecte
 Si tenim:
 ```js
 const obj = {
@@ -62,3 +62,23 @@ tenen dins de l'objecte `obj`.
 ```js
 console.log(prop1);
 ```
+
+## Valor per defecte en una desestructuració
+Podem definir un valor per defecte en una desestructuració, de manera
+que si aquella propietat és `undefined`, se li asigni un valor per defecte.
+
+Si tenim:
+```js
+const obj = {
+  prop1: 'ha',
+  prop2: 'he',
+  prop3: 'hi',
+  prop4: 'ho',
+  prop5: 'hu'
+};
+
+const { prop1, prop7 = 'pa' } = obj;
+```
+
+En aquest cas, com que no existeix la propietat `prop7` dins de l'objecte `obj`,
+la constant `prop7` tindrà el valor per defecte. En aquest exemple `pa`.
