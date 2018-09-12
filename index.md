@@ -1,4 +1,4 @@
 # Notes
 
-[JavaScript](notes/javascript)
+[JavaScript](notes/javascript)  
 [My atom plugins](notes/atom_plugins)
