@@ -96,7 +96,7 @@ const obj = {
 ```
 
 L'objecte `obj` quedaria de la següent manera:
-```json
+```js
 {
     field1: 'bar',
     field2: 'fuu'
