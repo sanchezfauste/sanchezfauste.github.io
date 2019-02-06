@@ -83,7 +83,7 @@ const { prop1, prop7 = 'pa' } = obj;
 En aquest cas, com que no existeix la propietat `prop7` dins de l'objecte `obj`,
 la constant `prop7` tindrà el valor per defecte. En aquest exemple `pa`.
 
-## Obtenir la clau d'un objecte a partir del valor d'una variable
+# Obtenir la clau d'un objecte a partir del valor d'una variable
 Si per exemple fem:
 
 ```js
