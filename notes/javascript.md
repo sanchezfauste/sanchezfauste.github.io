@@ -83,6 +83,8 @@ const { prop1, prop7 = 'pa' } = obj;
 En aquest cas, com que no existeix la propietat `prop7` dins de l'objecte `obj`,
 la constant `prop7` tindrà el valor per defecte. En aquest exemple `pa`.
 
+Enllaç útil: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
 # Obtenir la clau d'un objecte a partir del valor d'una variable
 Si per exemple fem:
 
