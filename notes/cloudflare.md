@@ -4,7 +4,7 @@ Useful Cloudflare tricks and configs.
 ## Get real visitor IPs in nginx
 This allows you to get the real visitor IPs in `nginx` instead of Cloudflare's proxy IPs. Useful if you use Cloudflare's proxy.
 
-Edit `/etc/nginx/nginx.conf` and add the following inside `http` section
+Edit `/etc/nginx/nginx.conf` and add the following inside `http` section:
 ```nginx
 # Show original visitor IP from Cloudflare proxy requests
 set_real_ip_from 103.21.244.0/22;
