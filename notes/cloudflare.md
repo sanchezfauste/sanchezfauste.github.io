@@ -47,7 +47,7 @@ First we need to enable remoteip module with:
 a2enmod remoteip
 ```
 
-Next create remoteip config telling what header and IP ranges to use. Create the file:
+Next create `remoteip` config telling what header and IP ranges to use. Create the file:
 ```
 /etc/apache2/conf-available/remoteip.conf
 ```
@@ -80,7 +80,7 @@ RemoteIPTrustedProxy 2c0f:f248::/32
 ```
 Note: `RemoteIPTrustedProxy` must be [Cloudflare IPs](https://www.cloudflare.com/ips/). Check if IPs are diferent and edit config as needed.
 
-Enable remoteip config and restart apache2:
+Enable `remoteip` config and restart `apache2`:
 ```bash
 a2enconf remoteip
 systemctl restart apache2
